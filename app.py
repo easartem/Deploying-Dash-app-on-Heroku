@@ -666,7 +666,6 @@ def make_graph(year, fx, fy, n_clusters):
 # #### *Bar chart race behaviour*
 
 # In[34]:
-'''
 
 @app.callback(
     Output("race_chart", "children"), 
@@ -698,7 +697,7 @@ def select_gif(factor):
     
     return video
  
-'''
+
 
 # ## III. Happy dashboard :)
 
