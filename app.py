@@ -189,7 +189,7 @@ def make_df_chart_race(selected, top):
 # In[12]:
 
 
-make_df_chart_race('Score', 5)
+#make_df_chart_race('Score', 5)
 # NaN is totally normal because they were out of the top selected that year
 
 
@@ -293,7 +293,7 @@ row1 = dbc.Row([
 
 # In[18]:
 
-
+'''
 fig_race = bcr.bar_chart_race(make_df_chart_race('Score', 10),
                               #filename='chart_race.mp4',
                               n_bars=5, 
@@ -307,7 +307,7 @@ fig_race = bcr.bar_chart_race(make_df_chart_race('Score', 10),
                              )
 
 fig_race
-
+'''
 
 # In[19]:
 
@@ -316,7 +316,7 @@ row2 = dbc.Row([
                   dbc.Col(
                       dbc.Card([
                               html.P(""" """),                           
-                              html.Div(id = 'race_chart'), 
+                              #html.Div(id = 'race_chart'), 
                               html.P(""" """)                           
                               ],
                               style={'box-shadow': '2px 2px 2px lightgrey', 'margin-top':15}
