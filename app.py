@@ -30,10 +30,9 @@
 import dash
 import pandas as pd
 import numpy as np
+from dash import dcc, html
 import plotly.express as px
-import dash_core_components as dcc
 import dash_bootstrap_components as dbc
-import dash_html_components as html
 from dash.dependencies import Input, Output
 import plotly.graph_objs as go
 from sklearn.cluster import KMeans
@@ -215,7 +214,8 @@ all_countries = df.Country.unique()
 
 
 external_stylesheets=[dbc.themes.BOOTSTRAP]
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+serverGunicorn = app.server
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets, server=serverGunicorn)
 
 
 # ### 1. Layout elements
@@ -707,6 +707,7 @@ def select_gif(factor):
 
 
 # Run app and display result on http://127.0.0.1:8050/
-app.run_server(debug=True, use_reloader=False)
+if __name__ == '__main__':
+    app.run_server(debug=True, use_reloader=False)
 
 
