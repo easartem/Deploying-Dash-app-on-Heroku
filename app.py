@@ -39,6 +39,10 @@ from sklearn.cluster import KMeans
 import bar_chart_race as bcr
 
 
+external_stylesheets=[dbc.themes.BOOTSTRAP]
+app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
+server = app.server
+
 # ## I. Data Pre-Processing
 
 # ### 1. Loading Data
@@ -213,11 +217,6 @@ all_countries = df.Country.unique()
 # In[15]:
 
 
-external_stylesheets=[dbc.themes.BOOTSTRAP]
-serverGunicorn = app.server
-app = dash.Dash(__name__, external_stylesheets=external_stylesheets, server=serverGunicorn)
-
-
 # ### 1. Layout elements
 
 # #### *Map panel*
@@ -316,7 +315,7 @@ row2 = dbc.Row([
                   dbc.Col(
                       dbc.Card([
                               html.P(""" """),                           
-                              #html.Div(id = 'race_chart'), 
+                              html.Div(id = 'race_chart'), 
                               html.P(""" """)                           
                               ],
                               style={'box-shadow': '2px 2px 2px lightgrey', 'margin-top':15}
