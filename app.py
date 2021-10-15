@@ -49,11 +49,11 @@ import bar_chart_race as bcr
 # In[4]:
 
 
-df2015 = pd.read_csv('C:/Users/Emeline/Documents/Code_Projects/Happy_dash_app/2015.csv', usecols=['Country','Region','Happiness Rank','Happiness Score','Economy (GDP per Capita)','Family','Health (Life Expectancy)','Trust (Government Corruption)', 'Generosity', 'Freedom'])
-df2016 = pd.read_csv('C:/Users/Emeline/Documents/Code_Projects/Happy_dash_app/2016.csv', usecols=['Country','Region','Happiness Rank','Happiness Score','Economy (GDP per Capita)','Family','Health (Life Expectancy)','Trust (Government Corruption)', 'Generosity', 'Freedom'])
-df2017 = pd.read_csv('C:/Users/Emeline/Documents/Code_Projects/Happy_dash_app/2017.csv', usecols=['Country','Happiness.Rank','Happiness.Score','Economy..GDP.per.Capita.', 'Family', 'Health..Life.Expectancy.', 'Freedom', 'Generosity', 'Trust..Government.Corruption.'])
-df2018 = pd.read_csv('C:/Users/Emeline/Documents/Code_Projects/Happy_dash_app/2018.csv')
-df2019 = pd.read_csv('C:/Users/Emeline/Documents/Code_Projects/Happy_dash_app/2019.csv')
+df2015 = pd.read_csv('2015.csv', usecols=['Country','Region','Happiness Rank','Happiness Score','Economy (GDP per Capita)','Family','Health (Life Expectancy)','Trust (Government Corruption)', 'Generosity', 'Freedom'])
+df2016 = pd.read_csv('2016.csv', usecols=['Country','Region','Happiness Rank','Happiness Score','Economy (GDP per Capita)','Family','Health (Life Expectancy)','Trust (Government Corruption)', 'Generosity', 'Freedom'])
+df2017 = pd.read_csv('2017.csv', usecols=['Country','Happiness.Rank','Happiness.Score','Economy..GDP.per.Capita.', 'Family', 'Health..Life.Expectancy.', 'Freedom', 'Generosity', 'Trust..Government.Corruption.'])
+df2018 = pd.read_csv('2018.csv')
+df2019 = pd.read_csv('2019.csv')
 
 
 # ### 2. Merging data
