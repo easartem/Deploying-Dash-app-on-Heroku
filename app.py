@@ -26,11 +26,11 @@
 
 # In[3]:
 
-
 import dash
 import pandas as pd
 import numpy as np
-from dash import dcc, html
+from dash import dcc
+from dash import html
 import plotly.express as px
 import dash_bootstrap_components as dbc
 from dash.dependencies import Input, Output
