@@ -17,6 +17,7 @@ Flask==3.0.3
 Flask-Compress==1.4.0
 fonttools==4.51.0
 future==1.0.0
+gunicorn==23.0.0
 idna==3.8
 importlib_metadata==8.4.0
 itsdangerous==2.2.0
